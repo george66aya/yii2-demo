@@ -74,6 +74,10 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+    public function actionUrl($data=NULL){
+        return $this->render('url',['data'=>$data]);
+    }
 
     /**
      * Logs in a user.
